@@ -7,10 +7,6 @@ import android.util.Log;
 
 public class NotesDB extends SQLiteOpenHelper {
     public static final String TABLE_NAME_NOTES = "diary";
-    public static final String COLUMN_NAME_ID = "_id";
-    public static final String COLUMN_NAME_NOTE_CONTENT = "content";
-    public static final String COLUMN_NAME_NOTE_TITLE = "title";
-    public static final String COLUMN_NAME_NOTE_DATE = "date";
     private final static int DATABASE_VERSION = 1;
     private final static String DATABASE_NAME = "diary.db";
     public NotesDB(Context context) {
@@ -20,13 +16,11 @@ public class NotesDB extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String sql = "CREATE TABLE " + TABLE_NAME_NOTES + "("
-                + COLUMN_NAME_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
-                + COLUMN_NAME_NOTE_TITLE + " TEXT  DEFAULT\"\","
-                + COLUMN_NAME_NOTE_CONTENT + " TEXT  DEFAULT\"\","
-                + COLUMN_NAME_NOTE_DATE + " TEXT  DEFAULT\"\"" + ")";
+        String sql = "create table diary( _id INTEGER primary key,content TEXT,title varchar(15),"+
+                "date varchar(15),username varchar(15),categoyr varchar(15),stick INTEGER default 0,collect INTEGER default 0)";
         Log.d("SQL", sql);
         db.execSQL(sql);
+        db.execSQL("create table tb_user( name varchar(15) primary key,password varchar(15),lovingname varchar(15),stick INTEGER default 0,date varchar(15))");
     }
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {

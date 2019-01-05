@@ -15,7 +15,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:text="1970159526@qq.com"
+        android:text="欢迎您的使用"
         android:textColor="#FFF"
         android:textSize="14sp"/>
     <TextView
@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@id/mail"
-        android:text="郭敬潮"
+        android:text=""
         android:textColor="#FFF"
         android:textSize="14sp"/>
 </RelativeLayout>

@@ -6,6 +6,30 @@
         android:icon="@drawable/search"
         android:title="搜索"
         app:showAsAction="always"></item>
+    <item
+        android:id="@+id/queryAll"
+        android:title="显示全部"
+        app:showAsAction="never"></item>
+    <item
+        android:id="@+id/qureyTwenty"
+        android:title="20分"
+        app:showAsAction="never"></item>
+    <item
+        android:id="@+id/queryForty"
+        android:title="40分"
+        app:showAsAction="never"></item>
+    <item
+        android:id="@+id/querySixty"
+        android:title="60分"
+        app:showAsAction="never"></item>
+    <item
+        android:id="@+id/queryEighty"
+        android:title="80分"
+        app:showAsAction="never"></item>
+    <item
+        android:id="@+id/queryOneHunder"
+        android:title="100分"
+        app:showAsAction="never"></item>
 
 
 </menu>

@@ -1,26 +1,20 @@
 package lovediary.guo.com.lovediary;
 
 public class Diary {
-    private String id;
-    private String note;
+    private String _id;
     private String content;
     private String title;
     private String date;
+    private String username;
+    private String categoyr;
+    private Integer stick;
 
-    public String getId() {
-        return id;
+    public String get_id() {
+        return _id;
     }
 
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getNote() {
-        return note;
-    }
-
-    public void setNote(String note) {
-        this.note = note;
+    public void set_id(String _id) {
+        this._id = _id;
     }
 
     public String getContent() {
@@ -45,5 +39,29 @@ public class Diary {
 
     public void setDate(String date) {
         this.date = date;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getCategoyr() {
+        return categoyr;
+    }
+
+    public void setCategoyr(String categoyr) {
+        this.categoyr = categoyr;
+    }
+
+    public Integer getStick() {
+        return stick;
+    }
+
+    public void setStick(Integer stick) {
+        this.stick = stick;
     }
 }
